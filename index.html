@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professor</title>
+</head>
+
+<body>
+    <div align="center">
+    <h2>PROFESSOR</h2>
+        <fieldset style="width: 25%;">
+            Nome:
+            <input type="text" id="nomeProf" placeholder="Digite seu nome"><br>
+            Materia:
+            <select id="cboMateria">
+                <option></option>
+            </select>
+            <br>
+            <input type="button" id="bttnCad" value="Cadastrar" onclick="cadastrar()">
+        </fieldset>
+
+    <div align="center">
+    <h2>ALUNOS</h2>
+        <fieldset style="width: 85%;">
+            Nome:
+            <input type="text" id="nome" /> 
+            Sobrenome:
+            <input type="text" id="sobrenome" />
+
+            <button onclick="inserirAluno();">Incluir</button>
+
+        <table id="tabela-alunos">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+            </tr>
+            </thead>
+            <tbody id="corpo-tabela">
+            </tbody>
+        </table>
+            
+        <button onclick="salvar()">Salvar</button>
+    </div>
+        </fieldset>
+
+<script src="index.js"></script>
+</body>
+</html>
